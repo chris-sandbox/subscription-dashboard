@@ -1,5 +1,4 @@
 <App>
-  <Include src="./functions.rsx" />
   <Include src="./header.rsx" />
   <Frame
     id="$main"
