@@ -1,5 +1,4 @@
 <App>
-  <Include src="./functions.rsx" />
   <Include src="./header.rsx" />
   <Frame
     id="$main"
@@ -305,6 +304,7 @@
       footerPaddingType="normal"
       headerPaddingType="normal"
       marginType="normal"
+      padding="12px"
       paddingType="normal"
       requireValidation={true}
       resetAfterSubmit={true}
