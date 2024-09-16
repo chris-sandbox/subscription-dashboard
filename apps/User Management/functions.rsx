@@ -9,7 +9,7 @@
 // example: return data.find(element => element.isError)
 return data.error"
     resourceDisplayName="retool_db"
-    resourceName="01be4f46-afce-4f9f-a7bd-8ab487a1bce0"
+    resourceName="f5a32415-dffb-461e-aecd-61b459718be2"
     resourceTypeOverride=""
     runWhenModelUpdates={false}
     tableName="sample_users"
@@ -64,7 +64,7 @@ return data.error"
       '[{"key":"id","value":"{{ dataTable.selectedRow.id }}","operation":"="}]'
     }
     resourceDisplayName="retool_db"
-    resourceName="01be4f46-afce-4f9f-a7bd-8ab487a1bce0"
+    resourceName="f5a32415-dffb-461e-aecd-61b459718be2"
     resourceTypeOverride=""
     runWhenModelUpdates={false}
     tableName="sample_users"

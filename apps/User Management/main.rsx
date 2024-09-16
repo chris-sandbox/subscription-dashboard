@@ -305,6 +305,7 @@
       footerPaddingType="normal"
       headerPaddingType="normal"
       marginType="normal"
+      padding="12px"
       paddingType="normal"
       requireValidation={true}
       resetAfterSubmit={true}
