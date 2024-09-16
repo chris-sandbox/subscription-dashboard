@@ -183,6 +183,8 @@
       defaultSelectedRow={{ mode: "index", indexType: "display", index: 0 }}
       defaultSort={[{ object: { columnId: "dee66", direction: "desc" } }]}
       enableSaveActions={true}
+      groupByColumns={{}}
+      overflowType="pagination"
       primaryKeyColumnId="2e624"
       rowHeight="medium"
       searchTerm="{{searchFilter.value}}"
@@ -210,7 +212,6 @@
         label="ID"
         position="center"
         size={32}
-        summaryAggregationMode="none"
       />
       <Column
         id="ae551"
@@ -223,7 +224,6 @@
         position="center"
         referenceId="name"
         size={250}
-        summaryAggregationMode="none"
         valueOverride="{{ currentSourceRow.firstName }} {{ currentSourceRow.lastName }}"
       />
       <Column
@@ -237,7 +237,6 @@
         placeholder="Select option"
         position="center"
         size={72}
-        summaryAggregationMode="none"
       />
       <Column
         id="73222"
@@ -248,7 +247,6 @@
         label="Enabled"
         position="center"
         size={64}
-        summaryAggregationMode="none"
       />
       <Column
         id="ddc33"
@@ -259,7 +257,6 @@
         label="Created at"
         position="center"
         size={96}
-        summaryAggregationMode="none"
       />
       <Column
         id="ebc22"
@@ -273,7 +270,6 @@
         placeholder="Select options"
         position="center"
         size={260}
-        summaryAggregationMode="none"
       />
       <Column
         id="0d627"
@@ -284,7 +280,6 @@
         label="Website"
         position="center"
         size={200}
-        summaryAggregationMode="none"
       />
       <Column
         id="43db1"
@@ -296,7 +291,6 @@
         label="Bio"
         position="center"
         size={100}
-        summaryAggregationMode="none"
       />
     </Table>
     <Form
