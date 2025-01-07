@@ -1,10 +1,13 @@
 
 import { chromium } from "@playwright/test";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 export default async function globalSetup() {
   const browser = await chromium.launch();
   const page = await browser.newPage();
-  await page.goto("https://<your-domain>/auth/login");
+  await page.goto("https://testing.cheastycloud.retool.com/auth/login");
   await page
     .getByPlaceholder("name@company.com")
     .fill(`${process.env.PLAYWRIGHT_USERNAME}`);

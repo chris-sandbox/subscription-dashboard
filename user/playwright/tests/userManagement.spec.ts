@@ -4,7 +4,7 @@ import { test } from "../fixtures/authedPage";
 test.describe("User Management", () => {
   test("opens the app", async ({ authedPage }) => {
     await authedPage.goto(
-      "https://docsdemos.retool.com/embedded/public/b4889e10-bead-4f30-876e-905e51b1616a"
+      "https://testing.cheastycloud.retool.com/apps/b8c1eb8c-cd21-11ef-bc45-8393403a9a20/List%20View%20Demo/defaultPage"
     );
     await authedPage
     .getByPlaceholder(/Search by name/)
@@ -22,7 +22,7 @@ test.describe("User Management", () => {
 // test.describe("User Management", () => {
 //   test("opens the app", async ({ authedPage }) => {
 //     await authedPage.goto(
-//       "https://docsdemos.retool.com/embedded/public/b4889e10-bead-4f30-876e-905e51b1616a"
+//       "https://testing.cheastycloud.retool.com/apps/b8c1eb8c-cd21-11ef-bc45-8393403a9a20/List%20View%20Demo/defaultPage"
 //     );
 //     await authedPage.getByPlaceholder(/Search by name/).fill("eva");
   
