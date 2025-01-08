@@ -1,0 +1,30 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "b8c1eb8c-cd21-11ef-bc45-8393403a9a20",
+  "appTemplate": {
+    "experimentalFeatures": {
+      "object": {
+        "sourceControlTemplateDehydration": false
+      }
+    },
+    "pageCodeFolders": {
+      "object": {
+        "defaultPage": {
+          "array": []
+        }
+      }
+    },
+    "notificationsSettings": {
+      "object": {
+        "globalQueryShowFailureToast": true,
+        "globalQueryShowSuccessToast": false,
+        "globalQueryToastDuration": 4.5
+      }
+    },
+    "rootScreen": "defaultPage",
+    "isFetching": true,
+    "version": "3.133.0",
+    "experimentalDataTabEnabled": true
+  }
+}
