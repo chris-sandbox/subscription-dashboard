@@ -22,7 +22,7 @@
     style={{
       ordered: [
         { highlightBackground: "" },
-        { highlightText: "rgba(76, 186, 138, 1)" },
+        { highlightText: "rgb(70, 166, 124)" },
         { hoverText: "" },
       ],
     }}
