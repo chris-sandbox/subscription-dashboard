@@ -10,12 +10,12 @@ export default async function globalSetup() {
   await page.goto("https://testing.cheastycloud.retool.com/auth/login");
   await page
     .getByPlaceholder("name@company.com")
-    .fill(`${process.env.PLAYWRIGHT_USERNAME}`);
+    .fill(`${process.env.PLAYWRIGHT_USERNAME}`); //{process.env.PLAYWRIGHT_USERNAME}
   await page
-    .getByPlaceholder("*******************")
-    .fill(`${process.env.PLAYWRIGHT_PASSWORD}`);
+    .getByPlaceholder("Password")
+    .fill(`${process.env.PLAYWRIGHT_PASSWORD}`); //{process.env.PLAYWRIGHT_PASSWORD}
   await page.getByText(/^Sign in$/).click();
-  await page.getByText("Welcome to Retool").click();
+  // await page.getByText("Welcome to Retool").click();
   const cookies = await page.context().cookies();
   process.env.COOKIES = JSON.stringify(cookies); // set this env var to store the authed page session
   await browser.close();

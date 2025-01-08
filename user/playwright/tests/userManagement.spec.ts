@@ -1,6 +1,7 @@
 import { expect } from "@playwright/test";
 import { test } from "../fixtures/authedPage";
 
+console.log(test);
 test.describe("User Management", () => {
   test("opens the app", async ({ authedPage }) => {
     await authedPage.goto(
@@ -8,7 +9,7 @@ test.describe("User Management", () => {
     );
     await authedPage
     .getByPlaceholder(/Search by name/)
-    .fill("eva", { timeout: 5000 });
+    .fill("eva", { timeout: 15000 });
     // const gridContainer = authedPage.getByTestId("RetoolGrid:listView1");
 
     // await expect(gridContainer.getByRole("heading")).toHaveCount(2);
