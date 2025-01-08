@@ -114,12 +114,20 @@
   "container1": {
     "container": "listView1",
     "height": 1,
-    "width": 12
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
   },
   "container2": {
     "row": 2,
     "col": 2,
-    "height": 10.4,
+    "height": 26.8,
     "width": 6,
     "stackPosition": {
       "object": {
@@ -186,7 +194,6 @@
   "listView1": {
     "container": "container2",
     "subcontainer": "20fdc",
-    "row": 0,
     "col": 1,
     "height": 8,
     "width": 11,

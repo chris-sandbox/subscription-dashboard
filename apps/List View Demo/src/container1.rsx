@@ -27,15 +27,6 @@
       value={'#### {{ item.first_name + " " + item.last_name }}'}
       verticalAlign="center"
     />
-    <Checkbox
-      id="checkbox4"
-      label="Enabled"
-      labelAlign="right"
-      labelPosition="left"
-      labelWidth="88"
-      marginType="normal"
-      value="{{item.enabled}}"
-    />
     <Tags
       id="tags1"
       allowWrap={true}
@@ -46,6 +37,15 @@
       value={
         '{{item.first_name.includes(\'r\') ? ["Admin"] : item.first_name.includes(\'e\') ? ["Editor"] : ["Viewer"] }}'
       }
+    />
+    <Checkbox
+      id="checkbox4"
+      label="Enabled"
+      labelAlign="right"
+      labelPosition="left"
+      labelWidth="88"
+      marginType="normal"
+      value="{{item.enabled}}"
     />
     <TextInput
       id="email1"
