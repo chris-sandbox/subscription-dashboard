@@ -35,19 +35,4 @@ test.describe("User Management", () => {
   });
 });
 
-// what NOT to do:
-
-// test.describe("User Management", () => {
-//   test("opens the app", async ({ page }) => {
-//     await page.goto(
-//       "https://testing.cheastycloud.retool.com/apps/b8c1eb8c-cd21-11ef-bc45-8393403a9a20/List%20View%20Demo/defaultPage"
-//     );
-//     await page.getByPlaceholder(/Search by name/).fill("eva");
-  
-//     await expect(page.getByRole("heading", { name: /Eva/i })).toHaveCount(
-//       2
-//     );
-//   });
-// });
-
 
