@@ -1,34 +1,53 @@
-import { expect } from "@playwright/test";
-import { test } from "../fixtures/authedPage";
+import { expect, test } from '@playwright/test';
+import dotenv from "dotenv";
 
-console.log(test);
+dotenv.config();
+
 test.describe("User Management", () => {
-  test("opens the app", async ({ authedPage }) => {
-    await authedPage.goto(
-      "https://testing.cheastycloud.retool.com/apps/b8c1eb8c-cd21-11ef-bc45-8393403a9a20/List%20View%20Demo/defaultPage"
-    );
-    await authedPage
-    .getByPlaceholder(/Search by name/)
-    .fill("eva", { timeout: 15000 });
-    // const gridContainer = authedPage.getByTestId("RetoolGrid:listView1");
+  test("opens the app", async ({ page }) => {
+    await page.goto("https://testing.cheastycloud.retool.com/auth/login");
 
-    // await expect(gridContainer.getByRole("heading")).toHaveCount(2);
-    // await expect(gridContainer).toContainText("Eva Noyce");
-    // await expect(gridContainer).toContainText("Eva Lu Ator");
+    await page
+      .getByPlaceholder("name@company.com")
+      .fill(`${process.env.PLAYWRIGHT_USERNAME}`, { timeout: 10000 });
+
+    await page
+      .getByPlaceholder("Password")
+      .fill(`${process.env.PLAYWRIGHT_PASSWORD}`, { timeout: 10000 });
+
+    await page.getByText(/^Sign in$/).click();
+    await page.getByRole('link', { name: 'Apps' }).click();
+
+    await page.goto(
+      "https://testing.cheastycloud.retool.com/apps/b8c1eb8c-cd21-11ef-bc45-8393403a9a20/List%20View%20Demo/defaultPage",
+      { timeout: 100000 }
+    );
+
+    await page
+    .getByPlaceholder("Search by name")
+    .fill("eva", { timeout: 5000 });
+
+    const gridContainer = page.getByTestId("RetoolGrid:listView1");
+
+    await expect(gridContainer.getByRole("heading")).toHaveCount(2);
+    await expect(gridContainer).toContainText("Eva Noyce");
+    await expect(gridContainer).toContainText("Eva Lu Ator");
   });
 });
 
 // what NOT to do:
 
 // test.describe("User Management", () => {
-//   test("opens the app", async ({ authedPage }) => {
-//     await authedPage.goto(
+//   test("opens the app", async ({ page }) => {
+//     await page.goto(
 //       "https://testing.cheastycloud.retool.com/apps/b8c1eb8c-cd21-11ef-bc45-8393403a9a20/List%20View%20Demo/defaultPage"
 //     );
-//     await authedPage.getByPlaceholder(/Search by name/).fill("eva");
+//     await page.getByPlaceholder(/Search by name/).fill("eva");
   
-//     await expect(authedPage.getByRole("heading", { name: /Eva/i })).toHaveCount(
+//     await expect(page.getByRole("heading", { name: /Eva/i })).toHaveCount(
 //       2
 //     );
 //   });
 // });
+
+
