@@ -11,6 +11,7 @@
     errorTransformer="// The variable 'data' allows you to reference the request's data in the transformer. 
 // example: return data.find(element => element.isError)
 return data.error"
+    isHidden={false}
     query={include("../lib/getRows.sql", "string")}
     resourceDisplayName="retool_db"
     resourceName="f9d7f926-5abd-4993-ada0-7becdbd4211a"
@@ -33,6 +34,7 @@ return data"
     errorTransformer="// The variable 'data' allows you to reference the request's data in the transformer. 
 // example: return data.find(element => element.isError)
 return data.error"
+    isHidden={false}
     resourceName="ce90328c-f9de-4e98-af5f-8516ab43a461"
     runWhenModelUpdates={false}
     tableName="users12"
@@ -66,6 +68,7 @@ return data.error"
     filterBy={
       '[{"key":"id","value":"{{ dataTable.selectedRow.id }}","operation":"="}]'
     }
+    isHidden={false}
     resourceName="ce90328c-f9de-4e98-af5f-8516ab43a461"
     runWhenModelUpdates={false}
     tableName="users12"
