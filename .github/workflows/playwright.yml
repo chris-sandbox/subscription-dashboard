@@ -6,6 +6,9 @@ on:
     branches: [ main, master ]
 jobs:
   test:
+    env:
+      PLAYWRIGHT_USERNAME: ${{ secrets.PLAYWRIGHT_USERNAME }}
+      PLAYWRIGHT_PASSWORD: ${{ secrets.PLAYWRIGHT_PASSWORD }}
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
