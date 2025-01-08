@@ -6,6 +6,7 @@ on:
     branches: [ main, master ]
 jobs:
   test:
+    name: Playwright Tests
     env:
       PLAYWRIGHT_USERNAME: ${{ secrets.PLAYWRIGHT_USERNAME }}
       PLAYWRIGHT_PASSWORD: ${{ secrets.PLAYWRIGHT_PASSWORD }}
