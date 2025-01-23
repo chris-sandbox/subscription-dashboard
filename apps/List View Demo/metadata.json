@@ -24,7 +24,7 @@
     },
     "rootScreen": "defaultPage",
     "isFetching": true,
-    "version": "3.133.0",
+    "version": "3.139.0",
     "experimentalDataTabEnabled": true
   }
 }
