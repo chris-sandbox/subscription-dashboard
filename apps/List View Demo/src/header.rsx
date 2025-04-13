@@ -6,11 +6,9 @@
   padding="8px 12px"
   sticky={true}
   style={{
-    ordered: [
-      { "primary-surface": "rgb(23, 61, 36)" },
-      { "primary-text": "" },
-      { "accent-background": "rgb(70, 166, 124)" },
-    ],
+    "primary-surface": "rgba(26, 74, 43, 1)",
+    "primary-text": "",
+    "accent-background": "rgb(70, 166, 124)",
   }}
   type="header"
 >
