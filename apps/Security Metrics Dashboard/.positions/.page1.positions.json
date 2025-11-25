@@ -1,0 +1,233 @@
+{
+  "cancelCloseTicket": {
+    "rowGroup": "footer",
+    "subcontainer": "closeTicketModal",
+    "height": 1,
+    "width": 4
+  },
+  "cancelOpenTicket": {
+    "rowGroup": "footer",
+    "subcontainer": "openTicketModal",
+    "height": 1,
+    "width": 4
+  },
+  "chartsHeader": {
+    "container": "chartsSection",
+    "rowGroup": "header",
+    "subcontainer": "00030",
+    "height": 1.2,
+    "width": 12
+  },
+  "chartsSection": {
+    "row": 15,
+    "height": 10,
+    "width": 12
+  },
+  "closeCloseModal": {
+    "rowGroup": "header",
+    "subcontainer": "closeTicketModal",
+    "col": 11,
+    "height": 1,
+    "width": 1
+  },
+  "closeNotes": {
+    "subcontainer": "closeTicketModal",
+    "row": 4.4,
+    "height": 1,
+    "width": 12
+  },
+  "closeOpenModal": {
+    "rowGroup": "header",
+    "subcontainer": "openTicketModal",
+    "col": 11,
+    "height": 1,
+    "width": 1
+  },
+  "closeReasonSelect": {
+    "subcontainer": "closeTicketModal",
+    "row": 2.4,
+    "height": 0.2,
+    "width": 12
+  },
+  "closeTicketInfo": {
+    "subcontainer": "closeTicketModal",
+    "height": 2,
+    "width": 12
+  },
+  "closeTicketTitle": {
+    "rowGroup": "header",
+    "subcontainer": "closeTicketModal",
+    "height": 1.2,
+    "width": 10
+  },
+  "dashboardTitle": {
+    "row": 0.4,
+    "height": 1.6,
+    "width": 12
+  },
+  "highRiskStat": {
+    "container": "metricsOverview",
+    "subcontainer": "00030",
+    "height": 0.8,
+    "width": 4,
+    "stackPosition": {
+      "object": {
+        "ordinal": 2,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "lowRiskStat": {
+    "container": "metricsOverview",
+    "subcontainer": "00030",
+    "col": 8,
+    "height": 0.8,
+    "width": 4,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "mediumRiskStat": {
+    "container": "metricsOverview",
+    "subcontainer": "00030",
+    "col": 4,
+    "height": 0.8,
+    "width": 4,
+    "stackPosition": {
+      "object": {
+        "ordinal": 1,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "metricsHeader": {
+    "container": "metricsOverview",
+    "rowGroup": "header",
+    "subcontainer": "00030",
+    "height": 1.2,
+    "width": 12
+  },
+  "metricsOverview": {
+    "row": 2.4,
+    "height": 3.2,
+    "width": 12
+  },
+  "openTicketButton": {
+    "container": "securityDataSection",
+    "rowGroup": "header",
+    "subcontainer": "00030",
+    "row": 0.6,
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "openTicketTitle": {
+    "rowGroup": "header",
+    "subcontainer": "openTicketModal",
+    "height": 1.2,
+    "width": 10
+  },
+  "riskTrendChart": {
+    "container": "chartsSection",
+    "subcontainer": "00030",
+    "height": 8.8,
+    "width": 6,
+    "stackPosition": {
+      "object": {
+        "ordinal": 1,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "securityDataSection": {
+    "row": 6,
+    "height": 9,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "securityTable": {
+    "container": "securityDataSection",
+    "subcontainer": "00030",
+    "height": 7.8,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "submitCloseTicket": {
+    "rowGroup": "footer",
+    "subcontainer": "closeTicketModal",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "submitOpenTicket": {
+    "rowGroup": "footer",
+    "subcontainer": "openTicketModal",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "tableHeader": {
+    "container": "securityDataSection",
+    "rowGroup": "header",
+    "subcontainer": "00030",
+    "height": 1.2,
+    "width": 8
+  },
+  "ticketDescription": {
+    "subcontainer": "openTicketModal",
+    "row": 4,
+    "height": 1,
+    "width": 12
+  },
+  "ticketRiskSelect": {
+    "subcontainer": "openTicketModal",
+    "row": 2,
+    "height": 0.2,
+    "width": 12
+  },
+  "ticketToolSelect": {
+    "subcontainer": "openTicketModal",
+    "height": 0.2,
+    "width": 12
+  },
+  "toolDistributionChart": {
+    "container": "chartsSection",
+    "subcontainer": "00030",
+    "col": 6,
+    "height": 8.8,
+    "width": 6,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  }
+}
