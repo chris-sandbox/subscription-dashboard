@@ -5,7 +5,7 @@
   _order={0}
   _searchParams={[]}
   browserTitle=""
-  title="Page 1"
+  title="Risk"
   urlSlug=""
   uuid="198c84a5-e488-4d1c-ab8d-6d5a9b754c56"
 >
